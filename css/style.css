@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remover e colocar diretamente na Tag HTML
+#gamesnake {
+    width: 512  ;
+    height: 512px;
+} */
