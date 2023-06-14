@@ -67,7 +67,6 @@ function iniciarJogo(){
         snake[0].y = 16 * box;
     }
 
-    // Esqueci...
     for(i = 1; i < snake.length; i++){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
@@ -106,7 +105,6 @@ function iniciarJogo(){
     if (pontos != snake.length-1) {
         pontos++;
         document.getElementById('pontuacao').innerText = pontos;
-        console.log(pontos);
     }    
     
     if (pontos == pontosProximaFase) {
@@ -120,17 +118,11 @@ function iniciarJogo(){
 
         document.getElementById('fase').innerText = fase;
         document.getElementById('velocidade').innerText = time; 
-        
-        console.log('fase: ' + fase);
-        console.log('Pontos para Próxima Fase: ' + pontosProximaFase);
-        console.log('time: ' + time);
     }
 }
 
-let time = 600; 
+let time = 200; 
 let jogo = setInterval(iniciarJogo, time);
-
-// Teste
 
 let pontos = 0;
 let pontosPorFase = 2
